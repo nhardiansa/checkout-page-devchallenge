@@ -24,7 +24,8 @@ h1 {
 .cart {
   border-radius: 12px;
   background-color: #f2f2f2;
-  padding: 30px 26px;
+  padding: 30px 26px 18px 26px;
+  margin-bottom: 40px;
 }
 
 .cart .goods {
@@ -81,4 +82,55 @@ h1 {
   background-color: #e0e0e0;
   border-radius: 4px;
   color: #828282;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #bdbdbd;
+}
+
+.cart .total {
+  margin-top: 87px;
+}
+
+.cart .total div {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info div h2 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.user-info div label {
+  font-size: 10px;
+  line-height: 12px;
+  color: #4f4f4f;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.user-info div input[type="text"] {
+  height: 40.56px;
+  width: 100%;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+
+  margin-bottom: 17px;
+}
+
+.user-info div input[type="text"]:focus {
+  border: 2px solid rgb(21, 85, 206);
 }
