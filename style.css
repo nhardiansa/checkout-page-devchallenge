@@ -109,7 +109,8 @@ hr {
   margin-bottom: 12px;
 }
 
-.user-info div label {
+.user-info div label,
+.region label {
   font-size: 10px;
   line-height: 12px;
   color: #4f4f4f;
@@ -117,7 +118,8 @@ hr {
   margin-bottom: 7px;
 }
 
-.user-info div input[type="text"] {
+.user-info div input[type="text"],
+select {
   height: 40.56px;
   width: 100%;
   border: 1px solid #828282;
@@ -126,11 +128,133 @@ hr {
   padding-left: 10px;
   font-size: 12px;
   line-height: 15px;
-  color: #828282;
+  color: #333333;
 
   margin-bottom: 17px;
 }
 
 .user-info div input[type="text"]:focus {
   border: 2px solid rgb(21, 85, 206);
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(assets/dropdown2.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-color: none;
+  background-size: 15px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.region {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 0px 23px;
+}
+
+.region label:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.region label:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#country {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#postal-code {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.save-info {
+  display: flex;
+}
+
+.save-info label {
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  margin-top: 21px;
+  width: 166px;
+  height: 54px;
+  border: 1px solid #f2994a;
+  background-color: #f2994a;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+
+  margin-left: auto;
+}
+
+button:hover {
+  color: #e0e0e0;
+  background-color: #da8337;
+  border: 1px solid #da8337;
+}
+
+.footer p {
+  margin-top: 100px;
+  margin-bottom: 19px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+#email,
+#phone,
+#name,
+#address,
+#city,
+#country,
+#postal-code {
+  background-repeat: no-repeat;
+}
+
+#email {
+  background-image: url(assets/email-white-18dp.svg);
+}
+
+#phone {
+  background-image: url(assets/call-white-18dp.svg);
+}
+
+#name {
+  background-image: url(assets/account_circle-white-18dp.svg);
+}
+
+#address {
+  background-image: url(assets/home-white-18dp.svg);
+}
+
+#city,
+#country {
+  background-image: url(assets/location_city-white-18dp.svg);
+}
+
+#postal-code {
+  background-image: url(assets/markunread_mailbox-white-18dp.svg);
 }

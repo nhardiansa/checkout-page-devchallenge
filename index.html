@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <div class="user-info">
+    <form class="user-info">
 
       <div class="contact">
         <h2>Contact information</h2>
@@ -92,16 +92,33 @@
         <label for="city">City</label>
         <input type="text" id="city" name="city" placeholder="Your city...">
 
-        <div>
+        <div class="region">
           <label for="country">Country</label>
           <select name="country" id="country">
+            <option value="none">Your country..</option>
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
           </select>
+
+          <label for="postal-code">Postal code</label>
+          <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
+        </div>
+
+        <div class="save-info">
+          <input type="checkbox" name="save-info" id="save-info">
+          <label for="save-info">Save this information for next time</label>
         </div>
       </div>
+      
+      <div class="btn">
+        <button type="submit">Continue</button>
+      </div>
+      
+    </form>
 
+    <div class="footer">
+      <p>Nabil Hardiansa @ DevChallenges.io</p>
     </div>
 
   
