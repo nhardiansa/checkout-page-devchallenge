@@ -102,6 +102,10 @@ hr {
   justify-content: space-between;
 }
 
+.user-info .contact {
+  margin-bottom: 45px;
+}
+
 .user-info div h2 {
   font-size: 14px;
   line-height: 17px;
@@ -125,10 +129,12 @@ select {
   border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 12px;
-  padding-left: 10px;
+  padding-left: 40px;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+
+  background-position: 10px 10px;
 
   margin-bottom: 17px;
 }
@@ -141,15 +147,6 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url(assets/dropdown2.svg);
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
-  background-color: none;
-  background-size: 15px;
-}
-
-select::-ms-expand {
-  display: none;
 }
 
 .region {
@@ -257,4 +254,46 @@ button:hover {
 
 #postal-code {
   background-image: url(assets/markunread_mailbox-white-18dp.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat(auto, 0.5fr);
+  }
+
+  .cart {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .user-info {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    width: 60%;
+  }
+
+  h1 {
+    margin-bottom: 51px;
+  }
+
+  .user-info .contact h2,
+  .user-info .shipping h2 {
+    margin-bottom: 15px;
+  }
+
+  .content {
+    grid-gap: 110px;
+  }
+
+  .footer p {
+    margin-top: 166px;
+  }
 }
